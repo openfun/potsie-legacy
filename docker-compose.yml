@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  app:
+    build:
+      context: .
+      target: development
+      args:
+        DOCKER_USER: ${DOCKER_USER:-1000}
+    image: potsie:development
+    env_file:
+      - env.d/development
+    ports:
+      - "8050:8050"
+    volumes:
+      - .:/app

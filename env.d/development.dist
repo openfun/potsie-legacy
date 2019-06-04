@@ -1,0 +1,5 @@
+# LRS
+# Uncomment and fill this variable with the token generated from your LRS
+# POTSIE_LRS_AUTH_TOKEN=copy/paste your token here
+# Uncomment and fill this variable with the URL to your LRS connection API
+# POTSIE_LRS_API_URL=https://lrs.foo.com/api/connection
