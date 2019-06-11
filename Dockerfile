@@ -23,8 +23,9 @@ WORKDIR /app
 COPY --from=back-builder /install /usr/local
 
 # Copy runtime-required files
-COPY src/potsie/server /app
 COPY ./docker/files/usr/local/bin/entrypoint /usr/local/bin/entrypoint
+RUN mkdir -p /usr/local/etc/gunicorn
+COPY ./docker/files/usr/local/etc/gunicorn/potsie.py /usr/local/etc/gunicorn/potsie.py
 
 # Give the "root" group the same permissions as the "root" user on /etc/passwd
 # to allow a user belonging to the root group to add new users; typically the
@@ -61,7 +62,11 @@ RUN pip install -e .[dev]
 ARG DOCKER_USER
 USER ${DOCKER_USER}
 
+# Run the development server
 CMD python -m potsie.server
 
 # ---- Production image ----
 FROM core as production
+
+# Run production wsgi server
+CMD gunicorn -c /usr/local/etc/gunicorn/potsie.py potsie.server.wsgi:app
