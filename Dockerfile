@@ -61,7 +61,7 @@ RUN pip install -e .[dev]
 ARG DOCKER_USER
 USER ${DOCKER_USER}
 
-CMD python src/potsie/server/app.py
+CMD python -m potsie.server
 
 # ---- Production image ----
 FROM core as production
