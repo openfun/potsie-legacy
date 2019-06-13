@@ -4,17 +4,9 @@ from dataclasses import asdict, dataclass, field
 import pandas as pd
 from faker import Faker
 
-fake = Faker()
-
-XAPI_VIDEO_VERB_COMPLETED = "completed"
-XAPI_VIDEO_VERB_INITIALIZED = "initialized"
-XAPI_VIDEO_VERB_INTERACTED = "interacted"
-XAPI_VIDEO_VERB_PAUSED = "paused"
-XAPI_VIDEO_VERB_PLAYED = "played"
-XAPI_VIDEO_VERB_SEEKED = "seeked"
-XAPI_VIDEO_VERB_TERMINATED = "terminated"
-
-XAPI_VIDEO_VERBS = (
+from .xapi import (
+    XAPI_VIDEO_DEFAULT_SPEED,
+    XAPI_VIDEO_SPEED_VALUES,
     XAPI_VIDEO_VERB_COMPLETED,
     XAPI_VIDEO_VERB_INITIALIZED,
     XAPI_VIDEO_VERB_INTERACTED,
@@ -22,16 +14,17 @@ XAPI_VIDEO_VERBS = (
     XAPI_VIDEO_VERB_PLAYED,
     XAPI_VIDEO_VERB_SEEKED,
     XAPI_VIDEO_VERB_TERMINATED,
+    XAPI_VIDEO_VERBS,
 )
-XAPI_VIDEO_DEFAULT_SPEED = 1.0
-XAPI_VIDEO_SPEED_VALUES = (0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0)
+
+fake = Faker()
 
 
 @dataclass
-class xAPIVideoMetric:
+class xAPIVideoMetricFactory:
     """Base data collected from xAPI video statements"""
 
-    id: str = field(default_factory=fake.uuid4)
+    _id: str = field(default_factory=fake.uuid4)
     timestamp: str = field(default_factory=fake.iso8601)
     verb: str = field(default_factory=lambda: random.choice(XAPI_VIDEO_VERBS))
     actor: str = field(default_factory=fake.sha1)
@@ -78,7 +71,7 @@ class xAPIVideoMetricsFactory:
         for _ in range(count):
             metrics.append(
                 asdict(
-                    xAPIVideoMetric(
+                    xAPIVideoMetricFactory(
                         timestamp=fake.date_time_between(
                             start_date=start_date, end_date=end_date
                         ).isoformat(),
