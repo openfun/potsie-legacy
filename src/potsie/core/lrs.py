@@ -107,6 +107,9 @@ def api(url=LRS_API_URL, auth_token=LRS_AUTH_TOKEN, verb="get", endpoint="", **k
     """Perform an HTTP request against the LRS API."""
 
     request_url = f"{url}/{endpoint}"
+
+    logger.debug(f"New request started: {verb} {request_url} {kwargs}")
+
     response = getattr(requests, verb)(
         request_url, headers={"Authorization": f"Basic {auth_token}"}, **kwargs
     )
@@ -117,6 +120,9 @@ def api(url=LRS_API_URL, auth_token=LRS_AUTH_TOKEN, verb="get", endpoint="", **k
         )
         logger.error(msg)
         raise PotsieLRSAPIError(msg)
+
+    logger.debug(f"Request ended: {response.status_code}")
+
     return response.json()
 
 
