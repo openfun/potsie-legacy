@@ -1,6 +1,5 @@
-import pandas as pd
-
 from pandas.core.dtypes.dtypes import DatetimeTZDtype
+
 from ..lrs import get_records_for_id
 from ..xapi import get_video_statements_metrics
 

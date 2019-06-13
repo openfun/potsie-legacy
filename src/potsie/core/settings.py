@@ -2,7 +2,6 @@ from os import environ
 
 from .exceptions import PotsieConfigurationError
 
-
 # LRS related settings
 LRS_AUTH_TOKEN = environ.get("POTSIE_LRS_AUTH_TOKEN", None)
 if LRS_AUTH_TOKEN is None:

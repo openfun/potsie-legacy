@@ -3,8 +3,7 @@ import logging
 import requests
 
 from .exceptions import PotsieLRSAPIError, PotsieLRSRecordParsingError
-from .settings import LRS_AUTH_TOKEN, LRS_API_URL
-
+from .settings import LRS_API_URL, LRS_AUTH_TOKEN
 
 logger = logging.getLogger(__name__)
 
@@ -129,7 +128,8 @@ def api(url=LRS_API_URL, auth_token=LRS_AUTH_TOKEN, verb="get", endpoint="", **k
 def get_objects_for_model(name, params):
     """Get all objects for a model name."""
 
-    get_nodes = lambda edges: [edge.get("node") for edge in edges]
+    def get_nodes(edges):
+        return [edge.get("node") for edge in edges]
 
     response = api(endpoint=name, params=params)
     objects = get_nodes(response.get("edges"))

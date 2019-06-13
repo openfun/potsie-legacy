@@ -1,14 +1,10 @@
 from werkzeug.wsgi import DispatcherMiddleware
 
 from .app import app as main_app
-from .video.apps.counters import (
-    app as video_counters,
-    app_pathname_prefix as video_counters_pathname_prefix,
-)
-from .video.apps.events import (
-    app as video_events,
-    app_pathname_prefix as video_events_pathname_prefix,
-)
+from .video.apps.counters import app as video_counters
+from .video.apps.counters import app_pathname_prefix as video_counters_pathname_prefix
+from .video.apps.events import app as video_events
+from .video.apps.events import app_pathname_prefix as video_events_pathname_prefix
 
 # FIXME: this does not enable hot reload
 if main_app.debug:

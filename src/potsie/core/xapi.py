@@ -1,4 +1,3 @@
-import datetime
 import logging
 from dataclasses import asdict, dataclass
 from typing import List
@@ -7,7 +6,6 @@ import pandas as pd
 
 from .exceptions import PotsieLRSRecordParsingError
 from .lrs import VideoRecord
-
 
 logger = logging.getLogger(__name__)
 

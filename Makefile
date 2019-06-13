@@ -42,6 +42,24 @@ stop: ## stop the development server
 .PHONY: stop
 
 # -- Back-end
+lint: lint-isort lint-black lint-flake8 lint-pylint ## run linters
+.PHONY: lint
+
+lint-black: ## run black linter
+	@$(COMPOSE_RUN_APP) black src/potsie
+.PHONY: lint-black
+
+lint-flake8: ## run flake8 linter
+	@$(COMPOSE_RUN_APP) flake8
+.PHONY: lint-flake8
+
+lint-isort: ## run isort linter
+	@$(COMPOSE_RUN_APP) isort --recursive --atomic .
+.PHONY: lint-isort
+
+lint-pylint: ## run pylint linter
+	@$(COMPOSE_RUN_APP) pylint src/potsie
+.PHONY: lint-pylint
 
 test: ## run tests
 	@$(COMPOSE_RUN_APP) pytest

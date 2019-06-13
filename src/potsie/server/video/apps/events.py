@@ -2,14 +2,12 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
-import pandas as pd
 
-from potsie.core.factories import xAPIVideoMetricsFactory
 from potsie.core.xapi import make_distribution_for_verb, select_metrics_for_verb
+
 from ...config import external_stylesheets
 from ..config import video_apps_pathname_prefix
 from ..utils import get_metrics_for_video_id
-
 
 app_pathname_prefix = f"{video_apps_pathname_prefix}/events/"
 app = dash.Dash(
