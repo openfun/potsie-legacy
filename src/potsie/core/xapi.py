@@ -109,8 +109,6 @@ def get_video_statements_metrics(records):
 
         video_metrics.metrics.append(metric)
 
-    logger.debug("foo!")
-
     # Convert metrics to DataFrame with timestamps as sorted datetime objects
     video_metrics = pd.DataFrame(asdict(video_metrics).get("metrics", None))
     video_metrics["timestamp"] = pd.to_datetime(video_metrics["timestamp"])

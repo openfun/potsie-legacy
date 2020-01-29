@@ -27,10 +27,6 @@ class Statement:
 
     @property
     def _context(self):
-        if not hasattr(self, "context"):
-            msg = f"Current '{self.verb}' statement {self.id} has no context"
-            logger.warning(msg)
-            raise PotsieLRSRecordParsingError(msg)
         return self.context
 
     @property
@@ -43,10 +39,6 @@ class Statement:
 
     @property
     def context_extensions(self):
-        if "extensions" not in self._context:
-            msg = f"Current '{self.verb}' statement {self.id} has no context extensions"
-            logger.warning(msg)
-            raise PotsieLRSRecordParsingError(msg)
         return self._context["extensions"]
 
 

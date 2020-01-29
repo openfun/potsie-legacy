@@ -40,7 +40,7 @@ def update_graph(video_id):
     if not video_id:
         return {}
 
-    video_id = "79b5e3cc-2fe7-93ef-2c4e-2db9df883b18"
+    # video_id = "79b5e3cc-2fe7-93ef-2c4e-2db9df883b18"
     metrics = get_metrics_for_video_id(video_id)
 
     played_dist = make_distribution_for_verb(metrics, "played")
