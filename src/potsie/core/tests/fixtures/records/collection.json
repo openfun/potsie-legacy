@@ -1,0 +1,676 @@
+[
+  {
+    "stored": "2019-06-14T09:06:39.552Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE",
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE"
+    ],
+    "activities": ["uuid://e73a3ac1-b71e-4a0c-ae96-15400565d3ce"],
+    "hash": "68da61ac7aa73d5cbfe77aa30353d10d0cc1a365",
+    "agents": ["http://foo.com|8a843c9aaf1f125b85854d555f7cfacc"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-14T09:06:39.552Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/length": 348.717,
+          "https://w3id.org/xapi/video/extensions/session-id": "2ee5ea8b-49ff-4def-b655-0ac1c0532770",
+          "https://w3id.org/xapi/video/extensions/completion-threshold": 0.845
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "8a843c9aaf1f125b85854d555f7cfacc",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-14T09:06:37.504000+00:00",
+      "version": "1.0.0",
+      "id": "e21e30b7-4093-40b7-9808-e2f7a3994bb7",
+      "result": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/time": 348.748,
+          "https://w3id.org/xapi/video/extensions/progress": 1,
+          "https://w3id.org/xapi/video/extensions/played-segments": "0[.]70.35[,]70.35[.]76.719[,]76.719[.]348.748"
+        }
+      },
+      "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/completed",
+        "display": {
+          "en-US": "completed"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FooOrg",
+            "http://adlnet.gov/expapi/activities/course": "26589",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://e73a3ac1-b71e-4a0c-ae96-15400565d3ce",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["http://adlnet.gov/expapi/verbs/completed"],
+    "personaIdentifier": "5d0361f08413e67b7830fb31",
+    "processingQueues": [],
+    "person": {
+      "_id": "5d0361f026d490db7026f946",
+      "display": "8a843c9aaf1f125b85854d555f7cfacc - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-14T09:06:37.504Z",
+    "relatedActivities": [
+      "uuid://e73a3ac1-b71e-4a0c-ae96-15400565d3ce",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|8a843c9aaf1f125b85854d555f7cfacc",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d03639f88c533001c468c98",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:35:49.402Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_PERSON_QUEUE",
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE"
+    ],
+    "activities": ["uuid://4dcb4d76-c0dc-9283-207a-e07dae411d64"],
+    "hash": "d78af2e41b6690845dc81e53c5c72a786227388a",
+    "agents": ["http://foo.com|a88866d5a050393189aae3cead57c18a"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:35:49.402Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/session-id": "5bd7ad3c-6329-4408-9ea3-aec4eb37c4a8",
+          "https://w3id.org/xapi/video/extensions/cc-subtitle-enabled": true,
+          "https://w3id.org/xapi/video/extensions/full-screen": false,
+          "https://w3id.org/xapi/video/extensions/length": 136.81,
+          "https://w3id.org/xapi/video/extensions/speed": "1.5x",
+          "https://w3id.org/xapi/video/extensions/volume": 0.94,
+          "https://w3id.org/xapi/video/extensions/completion-threshold": 0.757
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "a88866d5a050393189aae3cead57c18a",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:35:49.275000+00:00",
+      "version": "1.0.0",
+      "id": "231754e7-13b9-4bb9-ab51-9a35686b4242",
+      "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/initialized",
+        "display": {
+          "en-US": "initialized"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FooOrg",
+            "http://adlnet.gov/expapi/activities/course": "26589",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://4dcb4d76-c0dc-9283-207a-e07dae411d64",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["http://adlnet.gov/expapi/verbs/initialized"],
+    "personaIdentifier": "5cf7c7188413e67b7830f9dd",
+    "processingQueues": [],
+    "person": {
+      "_id": "5cf7c71826d4903d0026f6f6",
+      "display": "a88866d5a050393189aae3cead57c18a - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:35:49.275Z",
+    "relatedActivities": [
+      "uuid://4dcb4d76-c0dc-9283-207a-e07dae411d64",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|a88866d5a050393189aae3cead57c18a",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d02513588c533001c467d84",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:14:31.937Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE",
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE"
+    ],
+    "activities": ["uuid://34399991-98e0-7b3a-bc7d-529cc562da08"],
+    "hash": "c61c713e4d08fde2a6dca96be4da82603d5124d3",
+    "agents": ["http://foo.com|bdfb1d85f653b4c2f5739d48f2327ed3"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:14:31.937Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/session-id": "aa71cfa2-c57b-4a5e-b9e3-162dd7d726fb",
+          "https://w3id.org/xapi/video/extensions/cc-subtitle-enabled": true,
+          "https://w3id.org/xapi/video/extensions/full-screen": false,
+          "https://w3id.org/xapi/video/extensions/speed": "1x",
+          "https://w3id.org/xapi/video/extensions/volume": 0.3500000000000001
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "bdfb1d85f653b4c2f5739d48f2327ed3",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:14:32.728000+00:00",
+      "version": "1.0.0",
+      "id": "302c3e13-8d51-4463-98c5-6d3efd2bda65",
+      "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/interacted",
+        "display": {
+          "en-US": "interacted"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FOO",
+            "http://adlnet.gov/expapi/activities/course": "223",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://34399991-98e0-7b3a-bc7d-529cc562da08",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["http://adlnet.gov/expapi/verbs/interacted"],
+    "personaIdentifier": "5cf7747e8413e67b7830f9da",
+    "processingQueues": [],
+    "person": {
+      "_id": "5cf7747e26d49040fc26f6f0",
+      "display": "bdfb1d85f653b4c2f5739d48f2327ed3 - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:14:32.728Z",
+    "relatedActivities": [
+      "uuid://34399991-98e0-7b3a-bc7d-529cc562da08",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|bdfb1d85f653b4c2f5739d48f2327ed3",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d024c3788c533001c467cfc",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:14:07.628Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE",
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE"
+    ],
+    "activities": ["uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de"],
+    "hash": "0cf913f6c1bacae9eab0f4048788c40b7ed32fc8",
+    "agents": ["http://foo.com|b5d0f0bfdfc9d9a80a5182d77842782d"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:14:07.628Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/completion-threshold": 0.821,
+          "https://w3id.org/xapi/video/extensions/length": 291.108,
+          "https://w3id.org/xapi/video/extensions/session-id": "5b8043a0-ecd2-4576-b6a5-f379723f5dc9"
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "b5d0f0bfdfc9d9a80a5182d77842782d",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:14:07.465000+00:00",
+      "version": "1.0.0",
+      "id": "e9da0fc1-2253-44f8-af34-6bd8abb7dc08",
+      "result": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/time": 152.268,
+          "https://w3id.org/xapi/video/extensions/played-segments": "44.738[.]126.422[,]126.48[.]128.79[,]128.79[.]132.552[,]132.552[.]136.127[,]136.127[.]138.984[,]138.984[.]141.853[,]141.853[.]144.915[,]144.915[.]148.774[,]148.774[.]152.268",
+          "https://w3id.org/xapi/video/extensions/progress": 0.369
+        }
+      },
+      "verb": {
+        "id": "https://w3id.org/xapi/video/verbs/paused",
+        "display": {
+          "en-US": "paused"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FooOrg",
+            "http://adlnet.gov/expapi/activities/course": "26589",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["https://w3id.org/xapi/video/verbs/paused"],
+    "personaIdentifier": "5cf8df268413e67b7830fa01",
+    "processingQueues": [],
+    "person": {
+      "_id": "5cf8df2626d490c21426f716",
+      "display": "b5d0f0bfdfc9d9a80a5182d77842782d - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:14:07.465Z",
+    "relatedActivities": [
+      "uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|b5d0f0bfdfc9d9a80a5182d77842782d",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d024c1f88c533001c467cfa",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:14:04.345Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE",
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE"
+    ],
+    "activities": ["uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de"],
+    "hash": "ca86483087785114be5f263a3e1269d156e83fe4",
+    "agents": ["http://foo.com|b5d0f0bfdfc9d9a80a5182d77842782d"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:14:04.345Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/session-id": "5b8043a0-ecd2-4576-b6a5-f379723f5dc9"
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "b5d0f0bfdfc9d9a80a5182d77842782d",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:14:03.703000+00:00",
+      "version": "1.0.0",
+      "id": "a0986abb-a029-46eb-80d4-2839d86fe652",
+      "result": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/time": 148.774
+        }
+      },
+      "verb": {
+        "id": "https://w3id.org/xapi/video/verbs/played",
+        "display": {
+          "en-US": "played"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FooOrg",
+            "http://adlnet.gov/expapi/activities/course": "26589",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["https://w3id.org/xapi/video/verbs/played"],
+    "personaIdentifier": "5cf8df268413e67b7830fa01",
+    "processingQueues": [],
+    "person": {
+      "_id": "5cf8df2626d490c21426f716",
+      "display": "b5d0f0bfdfc9d9a80a5182d77842782d - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:14:03.703Z",
+    "relatedActivities": [
+      "uuid://b636e1b8-7c06-4dcb-a055-920aa39ac8de",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|b5d0f0bfdfc9d9a80a5182d77842782d",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d024c1c88c533001c467cf9",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:13:25.269Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE",
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE"
+    ],
+    "activities": ["uuid://79b5e3cc-2fe7-93ef-2c4e-2db9df883b18"],
+    "hash": "42ab8d9b7e72ae1c14937c77f7aed8dad4c009eb",
+    "agents": ["http://foo.com|5fe9f7737ffe0d7ec0fc59bc21dd5897"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:13:25.269Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/session-id": "ec7a43c1-83c5-4a5d-be41-156436c631f3"
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "5fe9f7737ffe0d7ec0fc59bc21dd5897",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:13:25.228000+00:00",
+      "version": "1.0.0",
+      "id": "87c1586b-1331-476e-b6c0-23bc1805c246",
+      "result": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/time-from": 0,
+          "https://w3id.org/xapi/video/extensions/time-to": 162.243,
+          "https://w3id.org/xapi/video/extensions/length": 158.858,
+          "https://w3id.org/xapi/video/extensions/progress": 0,
+          "https://w3id.org/xapi/video/extensions/played-segments": "0"
+        }
+      },
+      "verb": {
+        "id": "https://w3id.org/xapi/video/verbs/seeked",
+        "display": {
+          "en-US": "seeked"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FooOrg",
+            "http://adlnet.gov/expapi/activities/course": "26589",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://79b5e3cc-2fe7-93ef-2c4e-2db9df883b18",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["https://w3id.org/xapi/video/verbs/seeked"],
+    "personaIdentifier": "5d024bf58413e67b7830fb01",
+    "processingQueues": [],
+    "person": {
+      "_id": "5d024bf526d490473f26f8e8",
+      "display": "5fe9f7737ffe0d7ec0fc59bc21dd5897 - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:13:25.228Z",
+    "relatedActivities": [
+      "uuid://79b5e3cc-2fe7-93ef-2c4e-2db9df883b18",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|5fe9f7737ffe0d7ec0fc59bc21dd5897",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d024bf588c533001c467cf3",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  },
+  {
+    "stored": "2019-06-13T13:29:12.024Z",
+    "active": true,
+    "completedForwardingQueue": [],
+    "failedForwardingLog": [],
+    "client": "5cc02a7e1c3d876141a95ce6",
+    "lrs_id": "5cc02a7e1c3d871fb5a95ce5",
+    "completedQueues": [
+      "STATEMENT_QUERYBUILDERCACHE_QUEUE",
+      "STATEMENT_FORWARDING_QUEUE",
+      "STATEMENT_PERSON_QUEUE"
+    ],
+    "activities": ["uuid://34399991-98e0-7b3a-bc7d-529cc562da08"],
+    "hash": "75be2008cbcbc21bf045bc00f13b183e77b2ae71",
+    "agents": ["http://foo.com|bdfb1d85f653b4c2f5739d48f2327ed3"],
+    "statement": {
+      "authority": {
+        "objectType": "Agent",
+        "name": "New Client",
+        "mbox": "mailto:foo@foo.com"
+      },
+      "stored": "2019-06-13T13:29:12.024Z",
+      "context": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/completion-threshold": 0.75,
+          "https://w3id.org/xapi/video/extensions/length": 119.931,
+          "https://w3id.org/xapi/video/extensions/session-id": "95995c52-466c-47f9-9809-7c0da50a23df"
+        },
+        "contextActivities": {
+          "category": [
+            {
+              "id": "https://w3id.org/xapi/video",
+              "objectType": "Activity"
+            }
+          ]
+        }
+      },
+      "actor": {
+        "objectType": "Agent",
+        "account": {
+          "name": "bdfb1d85f653b4c2f5739d48f2327ed3",
+          "homePage": "http://foo.com"
+        }
+      },
+      "timestamp": "2019-06-13T13:29:13.023000+00:00",
+      "version": "1.0.0",
+      "id": "430731ab-c119-433f-9163-e765399cd528",
+      "result": {
+        "extensions": {
+          "https://w3id.org/xapi/video/extensions/time": 40,
+          "https://w3id.org/xapi/video/extensions/progress": 0.016,
+          "https://w3id.org/xapi/video/extensions/played-segments": "0[.]1.885[,]0[.]0[,]10[.]10[,]20[.]20[,]40[.]40[,]20[.]20[,]10[.]10[,]0[.]0[,]0[.]0[,]20[.]20[,]40[.]40[,]30[.]30[,]20[.]20[,]10[.]10[,]0[.]0[,]10[.]10[,]20[.]20[,]30[.]30[,]40[.]40"
+        }
+      },
+      "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/terminated",
+        "display": {
+          "en-US": "terminated"
+        }
+      },
+      "object": {
+        "definition": {
+          "type": "https://w3id.org/xapi/video/activity-type/video",
+          "extensions": {
+            "https://w3id.org/xapi/acrossx/extensions/school": "FOO",
+            "http://adlnet.gov/expapi/activities/course": "223",
+            "http://adlnet.gov/expapi/activities/module": "session01"
+          }
+        },
+        "id": "uuid://34399991-98e0-7b3a-bc7d-529cc562da08",
+        "objectType": "Activity"
+      }
+    },
+    "hasGeneratedId": false,
+    "deadForwardingQueue": [],
+    "voided": false,
+    "verbs": ["http://adlnet.gov/expapi/verbs/terminated"],
+    "personaIdentifier": "5cf7747e8413e67b7830f9da",
+    "processingQueues": [],
+    "person": {
+      "_id": "5cf7747e26d49040fc26f6f0",
+      "display": "bdfb1d85f653b4c2f5739d48f2327ed3 - http://foo.com "
+    },
+    "__v": 1,
+    "timestamp": "2019-06-13T13:29:13.023Z",
+    "relatedActivities": [
+      "uuid://34399991-98e0-7b3a-bc7d-529cc562da08",
+      "https://w3id.org/xapi/video"
+    ],
+    "relatedAgents": [
+      "http://foo.com|bdfb1d85f653b4c2f5739d48f2327ed3",
+      "mailto:foo@foo.com"
+    ],
+    "organisation": "6cc02487451e490041c5221f",
+    "_id": "5d024fa888c533001c467d6f",
+    "registrations": [],
+    "pendingForwardingQueue": []
+  }
+]
